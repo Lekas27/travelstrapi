@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "book"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hotel": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hotel.hotel",
+      "inversedBy": "books"
+    },
+    "startdate": {
+      "type": "date"
+    },
+    "lastdate": {
+      "type": "date"
+    }
+  }
+}
